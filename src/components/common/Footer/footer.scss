@@ -1,0 +1,16 @@
+@import "./../../../scss/global.scss";
+footer {
+  margin-top: auto;
+  height: $footer_size;
+  background-color: $dark;
+
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  .footerDiv {
+    font-size: $footer_font;
+    text-align: center;
+    color: $white;
+    font-weight: bold;
+  }
+}

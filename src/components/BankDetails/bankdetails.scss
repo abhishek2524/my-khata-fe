@@ -1,0 +1,37 @@
+@import "./../../scss//global.scss";
+.bankDetailContainer {
+  background-color: $light;
+  height: calc(100vh - #{$header_size - $footer_size});
+  overflow: auto;
+}
+.bank-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  form {
+    display: flex;
+    flex-direction: column;
+    button {
+      width: fit-content;
+      align-self: flex-end;
+    }
+  }
+}
+
+.heading {
+  display: flex;
+}
+.heading::after {
+  content: "";
+  border-right: 2px solid red;
+  padding: 0 5px;
+  font-size: 25px;
+}
+.form-label {
+  color: white;
+}
+.tableContent {
+  width: 100vw;
+  overflow-x: scroll;
+}

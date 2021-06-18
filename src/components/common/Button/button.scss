@@ -1,0 +1,13 @@
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.buttonDiv {
+  span {
+    padding: 0 5px;
+    i {
+      font-size: 1em;
+      color: white;
+    }
+  }
+}

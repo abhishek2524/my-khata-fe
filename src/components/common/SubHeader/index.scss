@@ -1,0 +1,50 @@
+@import "./../../../scss/global.scss";
+
+.sub-header {
+  display: flex;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  .hamburger {
+    visibility: hidden;
+  }
+  .rightEnd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sub-header {
+    flex-direction: column;
+    align-items: center;
+    .leftEnd {
+      align-self: flex-start;
+    }
+    .hamburger {
+      visibility: visible;
+      position: absolute;
+      right: 20px;
+      .fas {
+        font-size: 2rem;
+      }
+    }
+    .rightEnd {
+      display: flex;
+      flex-direction: column;
+      align-self: normal;
+      margin-top: 10px;
+      .buttonDiv {
+        margin: 5px;
+      }
+      .heading {
+        border-bottom: 1px solid red;
+        &::after {
+          content: "";
+          border: none;
+        }
+      }
+    }
+  }
+}

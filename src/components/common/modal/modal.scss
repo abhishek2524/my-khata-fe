@@ -1,0 +1,20 @@
+.modal-content {
+  border: 1px solid rgb(216, 216, 217);
+  .modal-header {
+    background-color: #57595c3b;
+    // border: none;
+    button {
+      outline: none;
+    }
+  }
+
+  .modal-body {
+    background-color: #57595cc2;
+    .row {
+      background: transparent;
+      .form-label {
+        color: white;
+      }
+    }
+  }
+}

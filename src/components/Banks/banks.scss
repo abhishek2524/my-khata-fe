@@ -1,0 +1,121 @@
+@import "./../../scss/global.scss";
+
+.bankContainer {
+  background-color: $light;
+  height: calc(100vh - #{$header_size - $footer_size});
+  overflow: auto;
+
+  .bankHeader {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 10px;
+  }
+
+  .bankBodyDiv {
+    .row {
+      // border: 1px solid blue;
+      .col {
+        // border: 1px solid red;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .bankCard {
+          position: relative;
+          width: 75%;
+          height: 175px;
+
+          .card {
+            height: 100%;
+            cursor: pointer;
+
+            transform: perspective(100px);
+            transform-style: preserve-3d;
+            transition: all 100ms ease-out;
+
+            justify-content: center;
+            align-items: center;
+            img {
+              position: absolute;
+              // top: 10px;
+              // left: 10px;
+              // width: 8em;
+              width: 100%;
+              height: 100%;
+              opacity: 0.3;
+            }
+            .card-body {
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              width: 100%;
+              top: 0;
+
+              .card-title,
+              .card-text {
+                color: $White;
+                text-shadow: 1px 2px $Lightest_Blue;
+              }
+            }
+            .card-footer {
+              position: absolute;
+              bottom: 0;
+              padding: 0;
+              width: 100%;
+              border-top: 0;
+              .bank-actions {
+                display: flex;
+                justify-content: space-between;
+                padding: 5px 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.no-data-div {
+  display: flex;
+  width: 100%;
+  // background: aliceblue;
+  margin: 2rem 0 0 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid #c9e8f96b;
+  span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: darkgray;
+    .fas {
+      font-size: 5rem;
+    }
+  }
+}
+
+.bank-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  form {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      width: fit-content;
+      align-self: flex-end;
+    }
+  }
+}
+pre {
+  white-space: pre-wrap;
+  text-align: center;
+}

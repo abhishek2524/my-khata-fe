@@ -1,0 +1,46 @@
+.dropdown-menu {
+  /* bottom: 100%; */
+  min-width: 100%;
+  /* background: red; */
+  position: absolute;
+  top: auto;
+  bottom: 150%;
+}
+
+th,
+td {
+  overflow-wrap: break-word;
+}
+.search-label {
+  align-self: center;
+  width: 30%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.wrapper {
+  background: white;
+}
+.tbl-header-footer {
+  background-color: #0d78f9b3;
+}
+
+table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .search-label {
+    width: 80%;
+  }
+  .table {
+    width: max-content;
+  }
+  .react-bootstrap-table-pagination-list {
+    display: flex;
+    margin-top: 10px;
+  }
+}

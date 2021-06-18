@@ -1,0 +1,18 @@
+@import "./../../../scss/global.scss";
+header {
+  background-color: $header_color;
+  width: 100vw;
+  height: $header_size;
+  padding: 10px 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .headerDiv {
+    display: flex;
+    justify-content: center;
+    font-size: $header_font;
+    color: $White;
+    font-family: serif;
+  }
+}
