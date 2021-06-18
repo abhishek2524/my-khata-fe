@@ -54,7 +54,7 @@ function BankCard(props) {
         <Card.Body>
           <Link
             to={{
-              pathname: `/account-detail/${bankID}`,
+              pathname: `/${process.env.REACT_APP_BASE}/account-detail/${bankID}`,
               state: {
                 isActive,
                 accountHolder,

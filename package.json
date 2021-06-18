@@ -1,5 +1,6 @@
 {
   "name": "my-khata",
+  "homepage": "https://abhishek2524.github.io/my-khata-fe/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +12,7 @@
     "bootstrap": "^4.5.3",
     "connected-react-router": "^6.9.1",
     "env-cmd": "^10.1.0",
+    "gh-pages": "^3.2.2",
     "history": "^4.10.1",
     "moment": "^2.29.1",
     "prop-types": "^15.7.2",
@@ -30,6 +32,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

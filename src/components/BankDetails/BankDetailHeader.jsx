@@ -11,7 +11,7 @@ function BankDetailHeader({ showModal, onAdd, data, ...rest }) {
       <div className="mx-2 heading text-light font-weight-bold">
         {`${data.accountHolder} - ${data.bankname.toUpperCase()} Bank`}
       </div>
-      <NavLink to="/bank">
+      <NavLink to={`/${process.env.REACT_APP_BASE}/`}>
         <Buttons>Bank List</Buttons>
       </NavLink>
       {data.isActive && (

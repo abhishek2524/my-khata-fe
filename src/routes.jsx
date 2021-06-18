@@ -77,7 +77,7 @@ export default (
       />
       <PrivateRoute
         exact
-        path={`${process.env.PUBLIC_URL}/bank`}
+        path={`${process.env.PUBLIC_URL}/`}
         component={BankComponent}
       />
       <Route path="*" component={notFound} />
