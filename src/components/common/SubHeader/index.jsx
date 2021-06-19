@@ -4,8 +4,10 @@ import DateTime from "../DateTime";
 import "./index.scss";
 import { setIsFetch } from "./../../../reducers/bankReducer";
 import { useDispatch } from "react-redux";
+import { useHistory } from "react-router";
 
 function SubHeader(props) {
+  const history = useHistory();
   const dispatch = useDispatch();
   const [isHamBurActive, setIsHamBurActive] = useState(false);
   const [Screen, setScreen] = useState(window.screen.width);
@@ -23,10 +25,17 @@ function SubHeader(props) {
   window.addEventListener("resize", () => {
     setScreen(window.screen.width);
   });
+  const logout = () => {
+    localStorage.clear();
+    history.push(`${process.env.PUBLIC_URL}/login`);
+  };
   return (
     <div className="sub-header">
       <div className="leftEnd">
         <Buttons onClick={refresh}>Refresh</Buttons>
+        <Buttons variant="info ml-2" onClick={logout}>
+          Logout
+        </Buttons>
       </div>
       <div className="hamburger">
         <i
